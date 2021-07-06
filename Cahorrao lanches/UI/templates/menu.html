@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Cachorrão Lanches | faça sua encomenda!</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/menu.css">
+  <link rel="stylesheet" href="../css/nav.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div class="container">
+  <header> 
+      <div id="title">
+        <h1><i class="fa fa-cutlery"></i><a href="index"><span class="highlight"> Cachorrão</span>-<span class="highlight">Lanches!</span></a></h1>
+      </div>
+      <nav class="topNav" id="menuNav">
+        <a href="index.html">Home</a>
+        <a href="login.html">login</a>
+        <div class="dropdown">
+          <a class="dropbtn"><a href="#" class="current">Menu <i class="fa fa-caret-down"></i></a></a>
+          <div class="dropdown-content">
+              <a href="#Lanches">Lanches</a>
+              <a href="#bebidas">Bebidas</a>
+        </div>
+        </div>
+        <a href="login">Login</a>
+        <a href="signup">Cadastrar-se</a>
+        <a class="search">
+          <form action="#">
+            <input type="text" placeholder="Pesquise sua Preferencia.." name="search">
+            <button type="Enviar"><i class="fa fa-search"></i></button>
+          </form>
+        </a>
+        <a href="javascript:void(0);" class="icon">&#82;&#36;</a>
+      </nav>
+    </header> 
+	<!--Image Gallery-->
+    <div class="menu">
+      <h1 id="menuWelcome"><i>Oque vai querer Hoje?</i></h1>
+      <h3>
+Por favor, escolha entre nossa variedade de refeições, lanches e bebidas e adicione suas opções ao carrinho.</h3>
+      <p><i>Clique  <i class="fa fa-shopping-cart" aria-hidden="true"></i> para ver carrinho</i></p>
+    </div>		
+    <section class="menu" id="lanches">
+		<h2>Lanches</h2>
+
+		<div class="responsive">
+			<div class="gallery">
+          <div class="flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <img src="https://www.bragaburgerq.com.br/wp-content/uploads/2016/12/x-salada.png" alt="x-salada" id="img01">
+                </div>
+                <div class="flip-box-back">
+                  <h2>Descrição:</h2>
+                  <p>Um delicioso x-salada pra voce.
+            </div>
+            </div>
+          </div>
+          <div class="desc">
+            <h1 id="item01">X-salada</h1>
+            <p class="Preço" id="preço01">&#82;&#36; 8,00</p>
+            <p><span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            </p>
+            <p>Selecione Quantidade: 
+              <select id="selectQtd01">
+                <option id="qty01">1</option>
+                <option id="qty02">2</option>
+                <option id="qty03">3</option>
+                <option id="qty04">4</option>
+                <option id="qty05">5</option>
+              </select>
+            </p>
+            <button class="cartBtn" id="btn01">Adicionar ao carrinho</button>
+        </div>
+			</div>
+		</div>      
+
+		<div class="responsive">
+			<div class="gallery">
+          <div class="flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <img src=https://alimentos.comprar.online/wp-content/uploads/sites/17/2017/12/hamburguer-xtudo-e1513515104262.jpg id="img02">
+                </div>
+                <div class="flip-box-back">
+                  <h2>Descrição:</h2>
+                  <p>Esse vai tirar sua fome!.</p>
+                </div>
+              </div>
+          </div>
+          <div class="desc">
+            <h1 id="item02">X Tudo</h1>
+            <p class="Preço" id="preço02">&#82;&#36; 15,00</p>
+            <p><span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            </p>
+            <p>Selecione Quantidade: 
+                <select id="selectQtd02">
+                  <option id="qtd01">1</option>
+                  <option id="qtd02">2</option>
+                  <option id="qtd03">3</option>
+                  <option id="qtd04">4</option>
+                  <option id="qtd05">5</option>
+                  <option id="qtd06">6</option>
+                  <option id="qtd07">7</option>
+                  <option id="qtd08">8</option>
+                  <option id="qtd09">9</option>
+                </select>
+              </p>
+            <button class="cartBtn" id="btn02">Adicionar ao carrinho</button>
+        </div>
+      </div>
+		</div> 
+		
+		<div class="responsive">
+			<div class="gallery">
+          <div class="flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+          <img src="https://cdn.neemo.com.br/uploads/item/photo/145820/xbacon.jpg" id="img03">
+        </div>
+        <div class="flip-box-back">
+          <h2>Descrição: </h2>
+          <p>Um delicioso x-bacon</p>
+        </div>
+      </div>
+    </div>
+          <div class="desc">
+            <h1 id="item03">X bacon</h1>
+            <p class="Preço" id="preço03">&#82;&#36; 11,00</p>
+            <p><span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+            </p>
+            <p>
+              Selecionar quantidade: 
+                <select id="selectQtd03">
+                  <option id="qtd01">1</option>
+                  <option id="qtd02">2</option>
+                  <option id="qtd03">3</option>
+                  <option id="qtd04">4</option>
+                  <option id="qtd05">5</option>
+                  <option id="qtd06">6</option>
+                </select>
+            </p>
+            <button class="cartBtn" id="btn03">Adicionar ao Carrinho</button>
+        </div>
+    	</div>
+    </div> 
+    
+    <div class="responsive">
+			<div class="gallery">
+          <div class="flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+          <img src=" https://www.bragaburgerq.com.br/wp-content/uploads/2016/12/x-calabresa.jpg" id="img04">
+        </div>
+        <div class="flip-box-back">
+          <h2>Descrição: </h2>
+          <p>Um Delicioso x calabresa pra voce!</p>
+        </div>
+      </div>
+    </div>
+          <div class="desc">
+            <h1 id="item04">X calabresa</h1>
+            <p class="Preço" id="preço04">&#82;&#36; 9,00</p>
+            <p><span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            </p>
+            <p>
+              Select Quantidade: 
+                <select id="selectQtd04">
+                  <option id="qtd01">1</option>
+                  <option id="qtd02">2</option>
+                  <option id="qtd03">3</option>
+                  <option id="qtd04">4</option>
+                  <option id="qtd05">5</option>
+                  <option id="qtd06">6</option>
+                </select>
+            </p>
+            <button class="cartBtn" id="btn04">Adicionar ao Carrinho</button>
+        </div>
+      </div>
+    </div>
+		<div class="clearfix"></div>
+	</section>
+  <!-- Dogão -->
+  <section class="menu" id="Dogão">
+    <h2>dogão</h2>
+      <div class="responsive">
+			<div class="gallery">
+          <div class="flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+          <img src=" https://static-images.ifood.com.br/image/upload/f_auto,t_medium/pratos/64aac627-40b8-46b9-be73-89b393ce0fc2/201904021557_UguC_d.jpg" id="img05">
+        </div>
+        <div class="flip-box-back">
+          <h2>Descrição:</h2>
+          <p></p>
+        </div>
+      </div>
+  </div>
+          <div class="desc">
+            <h1 id="item05">dogão com calabresa</h1>
+            <p class="price" id="price05">&#82;&#36; 7,00</p>
+            <p><span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            </p>
+            <p>
+              Selecione a Quantidade: 
+                <select id="selectQtd05">
+                  <option id="qtd01">1</option>
+                  <option id="qtd02">2</option>
+                  <option id="qtd03">3</option>
+                  <option id="qtd04">4</option>
+                  <option id="qtd05">5</option>
+                  <option id="qtd06">6</option>
+                </select>
+            </p>
+            <button class="cartBtn" id="btn05">Adicionar ao carrinho</button>
+        </div>
+      </div>
+    </div>  
+     
+    <div class="responsive">
+			<div class="gallery">
+          <div class="flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+          <img src="https://static-images.ifood.com.br/image/upload/f_auto,t_medium/pratos/5f28fed1-ccc0-47bd-9316-4952fac9d445/201901132045_cropp.jpg" id="img06">
+        </div>
+        <div class="flip-box-back">
+          <h2>Descrição:</h2>
+          <p></p>
+        </div>
+      </div>
+  </div>
+          <div class="desc">
+            <h1 id="item06">Dogão com Bacon</h1>
+            <p class="price" id="price06">&#82;&#36; 8,00</p>
+            <p><span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            </p>
+            <p>
+              Selecione Quantidade: 
+                <select id="selectQtd06">
+                  <option id="qtd01">1</option>
+                  <option id="qtd02">2</option>
+                  <option id="qtd03">3</option>
+                  <option id="qtd04">4</option>
+                  <option id="qtd05">5</option>
+                  <option id="qtd06">6</option>
+                </select>
+            </p>
+            <button class="cartBtn" id="btn06">Adicionar ao Carrinho</button>
+        </div>
+      </div>
+    </div> 
+    
+    <div class="responsive">
+			<div class="gallery">
+          <div class="flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+          <img src="https://img.stpu.com.br/?img=https://s3.amazonaws.com/pu-mgr/default/a0R0f000010KaygEAC/5bc48b0fe4b0dfaaf7696083.jpg&w=620&h=400" id="img07">
+        </div>
+        <div class="flip-box-back">
+          <h2>Descrição:</h2>
+          <p></p>
+        </div>
+      </div>
+  </div>
+          <div class="desc">
+            <h1 id="item07">Dogão Simples</h1>
+            <p class="price" id="price07">&#82;&#36; 5,00</p>
+            <p><span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+            </p>
+            <p>
+              Selecione Quantidade: 
+                <select id="selectQtd07">
+                  <option id="qtd01">1</option>
+                  <option id="qtd02">2</option>
+                  <option id="qtd03">3</option>
+                  <option id="qtd04">4</option>
+                  <option id="qtd05">5</option>
+                  <option id="qtd06">6</option>
+                </select>
+            </p>
+            <button class="cartBtn" id="btn07">Adicionar ao carrinho</button>
+        </div>		
+      </div>
+		</div> 
+     
+    <div class="responsive">
+			<div class="gallery">
+          <div class="flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+        <img src="https://static-images.ifood.com.br/image/upload/f_auto,t_medium/pratos/521905aa-5261-44fa-ad9f-625bc42616eb/201810101609_50673422.PNG" id="img08">
+      </div>
+      <div class="flip-box-back">
+        <h2>Descrição:</h2>
+        <p></p>
+      </div>
+      </div>
+    </div>
+        <div class="desc">
+          <h1 id="item08">Dogão Prensado</h1>
+          <p class="price" id="price08">&#82;&#36; 6,00</p>
+          <p><span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </p>
+          <p>
+            Selecione Quantidade: 
+              <select id="selectQtd08">
+                <option id="qtd01">1</option>
+                <option id="qtd02">2</option>
+                <option id="qtd03">3</option>
+                <option id="qtd04">4</option>
+                <option id="qtd05">5</option>
+                <option id="qtd06">6</option>
+              </select>
+          </p>
+          <button class="cartBtn" id="btn08">Adicionar ao Carrinho</button>
+        </div>			
+      </div>
+    </div>
+    <div class="clearfix"></div>
+
+    
+  <!--Bebidas-->
+  <section class="menu" id="drinks">
+    <h2>Bebidas</h2>
+
+    <div class="responsive">
+			<div class="gallery">
+          <div class="flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+          <img src="https://http2.mlstatic.com/copo-plastico-descartavel-cerveja-chopp-bar-300-ml-20-un-D_NQ_NP_812976-MLB26887592880_022018-F.jpg" id="img09">
+        </div>
+        <div class="flip-box-back">
+          <h2>Descrição:</h2>
+          <p>Cerveja Bem gelada!</p>
+        </div>
+      </div>
+  </div>
+          <div class="desc">
+            <h1 id="item09">Cerveja Copão 700ML</h1>
+            <p class="price" id="price09">&#82;&#36; 7,00</p>
+            <p><span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            </p>
+            <p>
+              Selecione Quantidade: 
+                <select id="Selecione Quantidade09">
+                  <option id="qtd01">1</option>
+                  <option id="qtd02">2</option>
+                  <option id="qtd03">3</option>
+                  <option id="qtd04">4</option>
+                  <option id="qtd05">5</option>
+                  <option id="qtd06">6</option>
+                  
+                </select>
+            </p>
+            <button class="cartBtn" id="btn09">Adicionar ao Carrinho</button>
+        </div>
+      </div>
+		</div> 
+      
+    <div class="responsive">
+			<div class="gallery">
+          <div class="flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+          <img src="https://http2.mlstatic.com/copo-plastico-descartavel-cerveja-chopp-bar-300-ml-20-un-D_NQ_NP_812976-MLB26887592880_022018-F.jpg" id="img10">
+        </div>
+        <div class="flip-box-back">
+         </div>
+      </div>
+  </div>
+          <div class="desc">
+            <h1 id="item10">Copão 500ML</h1>
+            <p class="price" id="price10">&#82;&#36; 5,00</p>
+            <p><span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            </p>
+            <p>
+              Selecione Quantidade: 
+                <select id="selectQtd10">
+                  <option id="qtd01">1</option>
+                  <option id="qtd02">2</option>
+                  <option id="qtd03">3</option>
+                  <option id="qtd04">4</option>
+                  <option id="qtd05">5</option>
+                  <option id="qtd06">6</option>
+                </select>
+            </p>
+            <button class="cartBtn" id="btn10">Adicionar ao Carrinho</button>
+        </div>			
+      </div>
+    </div> 
+    
+    <div class="responsive">
+			<div class="gallery">
+          <div class="flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+          <img src="https://araujo.vteximg.com.br/arquivos/ids/3756412-1000-1000/00000078908901.jpg?v=636359008038570000" id="img11">
+        </div>
+        <div class="flip-box-back">
+          <h2>Descrição:</h2>
+          <p></p>
+        </div>
+      </div>
+  </div>
+          <div class="desc">
+            <h1 id="item11">Refrrigerante 200 ML</h1>
+            <p class="price" id="price11">&#82;&#36; 2,50</p>
+            <p><span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+            </p>
+            <p>
+              Selecione Quantidade: 
+                <select id="selectQty11">
+                  <option id="qtd01">1</option>
+                  <option id="qtd02">2</option>
+                  <option id="qtd03">3</option>
+                  <option id="qtd04">4</option>
+                  <option id="qtd05">5</option>
+                  <option id="qtd06">6</option>
+                  <option id="qtd07">7</option>
+                  <option id="qtd08">8</option>
+                </select>
+            </p>
+            <button class="cartBtn" id="btn11">Adicionar ao Carrinho</button>
+        </div>			
+      </div>
+		</div> 
+        
+    <div class="responsive">
+			<div class="gallery">
+          <div class="flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+          <img src="http://www.shopsempre.com.br//media/catalog/product/cache/1/image/424x/9df78eab33525d08d6e5fb8d27136e95/c/o/coca_600ml.jpg" id="img12">
+          
+        </div>
+        <div class="flip-box-back">
+          <h2>Descrição:</h2>
+          <p></p>
+        </div>
+      </div>
+  </div>
+  <div class="desc">
+            <h1 id="item12">Refrigerante 600ML</h1>
+            <p class="price" id="price12">&#82;&#36; 6,00</p>
+            <p><span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            </p>
+            <p>
+              Selecione Quantidade: 
+                <select id="selectQtd12">
+                  <option id="qtd01">1</option>
+                  <option id="qtd02">2</option>
+                  <option id="qtd03">3</option>
+                  <option id="qtd04">4</option>
+                  <option id="qtd05">5</option>
+                  <option id="qtd06">6</option>
+                </select>
+            </p>
+            <button class="cartBtn" id="btn12">Adicionar ao Carrinho</button>
+        </div>			
+      </div>
+    </div> 
+    <div class="center">
+      <div class="pagination">
+        <a href="#">&laquo;</a>
+        <a href="#">1</a>
+        <a class="current" href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">&raquo;</a>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+  </section>
+     <!-- Add To Cart Modal -->
+     <div id="generalModal" class="modal">
+      <!-- Modal content -->
+      <div class="modalContent">
+        <span class="close">&times;</span>
+        <h1>Message From FastFoodFast</h1>
+        <h3 id="generalInfo"></h3>
+      </div>
+    </div>
+   <!-- End container div -->
+  </div>
+    <footer>
+        <p>Entre em contato</p>
+        <p><span class="highlight">Cachorrão</span>-<span class="highlight">Lanches!</span>, Copyright &copy; 2019</p>
+    </footer>
+  <script src="../js/scripts.js"></script>
+  <script src="../js/cart.js"></script>
+</body>
+</html>

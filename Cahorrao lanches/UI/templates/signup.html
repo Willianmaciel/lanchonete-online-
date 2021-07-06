@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Cachorrão Lanches | Entar</title>
+		<link rel="stylesheet" href="../css/main.css">
+		<link rel="stylesheet" href="../css/forms.css">
+		<link rel="stylesheet" href="../css/nav.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<div class="container">
+			<header> 
+				<div id="title">
+					<h1><a href="index"><i class="fa fa-cutlery"></i><span class="highlight"> Cachorrão</span>-<span class="highlight">Lanches!</span></a></h1>
+				</div>
+				<nav class="topNav">
+					<a href="index.html">Home</a>
+					<a href="index#about">Sobre</a>
+					<div class="dropdown">
+							<a class="dropbtn"><a href="menu">Menu <i class="fa fa-caret-down"></i></a></a>
+							<div class="dropdown-content">
+									<a href="menu#Lanches">Lanches</a>
+									<a href="menu#Dogão">Dogão</a>
+									<a href="menu#Bebidas">Bebidas</a>
+									</div>
+					</div>
+					<a href="login">entrar</a>
+					<a href="#" class="current">cadastrar-se</a>
+					<a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
+				</nav>
+			</header>
+			<h1 class="formTitle">Criar</h1>
+			<h2>novos Clientes</h2>
+			<h4> ao se cadastrar você poderar ver os pedidos em sua conta</h4>
+			<br>
+			<div id="signupForm">
+					<form>
+						<i style="color: red; text-shadow: 1.2px 1.2px 1px black;">Todos os campos abaixo são necessarios</i>
+						<i class="fa fa-user fa-2x" aria-hidden="true"></i>
+						<div id="usernameErr"></div>
+						<label for="username">Usuário</label>
+							<input id="username" name="username" placeholder="Enter a username" autocomplete="off" autofocus required>
+						<label for="email">Email</label>
+							<input id="email" name="email" type="email" placeholder="entre com seu endereço" required>
+							<div id="emailErr"></div>
+							<label for="password">Senha</label>
+							<input id="password" name="password" type="password" placeholder="Crie uma senha" required>
+							<div id="passwordErr"></div>
+							<label for="password2">Confirme sua Senha</label>
+							<input id="password2" name="password2" type="password" placeholder="Repita sua senha" required>
+							<div id="password2Err"></div>
+						<button id="signupBtn" type="button">Criar novo Usuário</button>
+						<span class="white">já é registrado? <a href="./login">Login</a> em vez de</span>
+					</form>
+				</div>
+			</div>
+			<div class="last">	
+			</div>
+		<footer>
+        <p>entre em contato</p>
+        
+        <p><span class="highlight">cachorrão</span>-<span class="highlight">Lanches!</span>, Copyright &copy; 2019</p>
+		</footer>
+		<script src="../js/scripts.js"></script>
+		<script src="../app/js/user.js" type="module"></script>
+	</body>
+</html>

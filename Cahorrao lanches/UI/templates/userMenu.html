@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cachorrão Lanches | Ondem de Preço</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/menu.css">
+  <link rel="stylesheet" href="../css/nav.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div class="container">
+  <header> 
+    <div id="title">
+      <h1><i class="fa fa-cutlery"></i><a href="userIndex"><span class="highlight"> Cachorrão</span>-<span class="highlight">lanches!</span></a></h1>
+    </div>
+
+    </div>
+    <nav class="topNav" id="menuNav">
+      <a href="userIndex">Home</a>
+      <a href="index.html"></a>
+      <div class="dropdown">
+        <a class="dropbtn"><a href="#" class="current">Menu <i class="fa fa-caret-down"></i></a></a>
+        <div class="dropdown-content">
+            <a href="#lanches">Lanches</a>
+            <a href="#dogão">dogão</a>
+            <a href="#bebidas">bebidas</a>
+           </div>
+      </div>
+      <div class="dropdown">
+        <a class="dropbtn"><a class="me"></a></a>
+        <div class="dropdown-content">
+        </div>
+      </div>     
+      <a href='#' id="logout">SAIR</a>
+      <i class="fa fa-shopping-cart fa-1x" id="cartInfo"><span id="totalItems">0</span> Carrinho</i>
+      <a class="search">
+          <input type="text" placeholder="Pesquise sua Prefencia.." name="search" id="menuSearch">
+          <button type="button" id="menuSearchBtn"><i class="fa fa-search"></i></button>
+      </a>
+      <a href="javascript:void(0);" class="icon">&#9776;</a>
+    </nav>
+  </header> 
+  <!--Image Gallery-->
+  <div class="menu">
+    <h1 id="menuWelcome">Bem Vindo! <span class="me" id="me"></span></h1>
+    <div class="err" id="menuErr"></div>
+    <h3>Por favor, selecione nossa variedade de lanches e bebidas e adicione suas opções ao carrinho.</h3>
+    <p><i>Clique no Carrinho de compras <i class="fa fa-shopping-cart" aria-hidden="true"></i> para ver as compras</i></p>
+  </div>
+  <div id="food">		
+    <section class="menu" id="meals">
+      <h2>LANCHES</h2>
+    </section>
+    <div class="clearfix"></div>
+   </div>
+   <!--BEBIDAS-->
+    <section class="menu" id="drinks">
+      <h2>BEBIDAS</h2>  
+    </section>
+    <div class="clearfix"></div>
+  </div>
+  <div class="center" id="pgsDiv">
+      <div class="pagination">
+        <a class="pgNav" id="prevPg">&laquo;</a>
+        <span id="pgs">
+        <a id="page1">1</a>
+        </span>
+        <a class="pgNav" id="nextPg">&raquo;</a>
+      </div>
+  </div>
+
+
+<!--ORDER HISTORY-->
+<div class="last">
+  <div class="menu" id="history" style="padding-bottom: 10px">
+    <br><h1 style="box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.2);"><i>Ver Historico recente de pedidos</i></h1>
+    <ul id="hist"></ul>
+  </div>
+  <div>
+    <table id="tableHistory">
+      <thead>
+      <tr>
+        <th>Data</th>
+        <th>Item</th>
+        <th>Nome</th>
+        <th>Quantide</th>
+        <th>Preço</th>
+      </tr>
+      </thead>
+    </table>
+  </div>
+  </div>
+    <!-- Modal -->
+    <div id="modalDiv" class="modal">
+      <!-- Modal content -->
+      <div class="modalContent cart">
+        <span class="close">&times;</span>
+        <h1>SHOPPING CART</h1>
+        <p><b>Username: </b><span class="me"></span></p>
+        <p><b>Address: <input type="text" placeholder="Please enter your delivery address" id="userAddr"></b></p>
+        <p><b>PhoneNo: <input type="number" placeholder="Please enter your phone number" id="userPhone"></b></p>
+        <table id="cartTable">
+          <thead>
+            <th>Imagem</th>
+            <th>Nome</th>
+            <th>Quantidade</th>
+            <th>Preço</th>
+            <th>Atiividade</th>
+          </thead>
+          </table>
+        <h3>
+          PREÇO TOTAL: NGN <span id="totalPrice">0.00</span>
+        </h3>
+        <div id="cartErr" class="err"></div>
+        <button type="submit" id="checkoutBtn">PREPARAR PEDIDO</button>
+      </div>
+    </div>
+     <!-- Add To Cart Modal -->
+     <div id="generalModal" class="modal">
+      <!-- Modal content -->
+      <div class="modalContent general">
+        <span class="close">&times;</span>
+        <h1>Message From FastFoodFast</h1>
+        <h3 id="generalInfo"></h3>
+      </div>
+    </div>
+   <!-- End container div -->
+  </div>
+    <footer>
+        <p>Entre em Contato</p>
+        <p><span class="highlight">Dogão</span>-<span class="highlight">lanches!</span>, Copyright &copy; 2019</p>
+    </footer>
+  <script src="../app/js/getmenu.js"></script>
+  <script src="../app/js/username.js"></script>
+  <script src="../js/scripts.js"></script>
+  <script src="../js/cart.js"></script>
+  <script src="../app/js/buynow.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Cachorrão Lanches | Cadastra-se</title>
+		<link rel="stylesheet" href="../css/main.css">
+		<link rel="stylesheet" href="../css/forms.css">
+		<link rel="stylesheet" href="../css/nav.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<div class="container">
+			<header> 
+				<div id="title">
+					<h1><a href="index"><i class="fa fa-cutlery"></i><span class="highlight"> Cachorrão</span>-<span class="highlight">lanches!</span></a></h1>
+				</div>
+				<nav class="topNav">
+					<a href="./index">Home</a>
+					<a href="./index#about">About</a>
+					<a href="./login">Entrar</a>
+					<a href="./signup" class="current">Cadastrar-se</a>
+					<a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
+				</nav>
+			</header>
+			<h1 class="formTitle">Crie Uma conta</h1>
+			<h2>Novos Clientes</h2>
+			<h4>	ao se cadastrar você poderar ver os pedidos em sua conta.</h4>
+			<br>
+			<div id="signupForm">
+					<form>
+						<i class="fa fa-user fa-2x" aria-hidden="true"></i>
+						<label for="userName">Usuário</label>
+							<input id="userName" name="userName" placeholder="Enter a username" autocomplete="off" autofocus>
+						<label for="email">Email</label>
+							<input id="email" name="email" type="email" placeholder="Enter your email address">
+						<label for="password">Senha</label>
+							<input id="password" name="password" type="password" placeholder="Create your password">
+						<label for="password2">Confirme sua sennha</label>
+							<input id="password2" name="password2" type="password" placeholder="Retype your password">
+						<button id="signupBtn">Criar novo Usuário</button>
+						<span class="white">já é registrado? <a href="./login">Login</a> em vez de</span>
+					</form>
+				</div>
+			</div>
+			<div class="last">	
+			</div>
+		<footer>
+        <p>Entre em contato </p>
+        <p><span class="highlight">Dogão</span>-<span class="highlight">lanches!</span>, Copyright &copy; 2019</p>
+    </footer>
+		<script src="../js/scripts.js"></script>
+	</body>
+</html>

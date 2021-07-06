@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem Vindo ao Cachorrão lanches!</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="container">
+  	<header id="index"> 
+      <div id="title">
+        <h1><i class="fa fa-cutlery"></i><a href="#"><span class="highlight"> Cachorrão</span>--<span class="highlight">lanches!</span></a></h1>
+      </div>
+      <nav class="topNav">
+        <a href="#" class="current">Home</a>
+        <a class="nav-link" href="menu.html">menu</a>
+        <a class="nav-link" href="login.html">login</a>
+        <a href=#about>sobre</a>
+        <div class="dropdown">
+            <a class="dropbtn"><a href="menu">Menu <i class="fa fa-caret-down"></i></a></a>
+            <div class="dropdown-content">
+                <a href=".menu#Refeição">Refeição</a>
+                <a href="menu#lanches">lanches</a>
+                <a href="menu#Bebidas">Bebidas</a>
+                <a href="menu#combo">Combo</a>
+            </div>
+        </div>
+        <a href="login">Login</a>
+        <a href="signup">Cadastra-se</a>
+        <a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
+      </nav>
+  	</header>
+    <h1 class="welcome">Bem Vindo ao Cachorrão lanches!</h1><br>
+    <h2><i>"faça já o seu pedido."</i></h2>
+    <p>De uma olhada em nossas opções <a href="menu" class="current">MENU</a> E escolha sua melhor opção!</p>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 6</div>
+            <img src="http://s2.glbimg.com/w935QI5ANQV9GzdxxQYlxJtNklk=/s.glbimg.com/et/gs/f/original/2016/02/05/cachorro_quente.jpg" style="width:100%">
+            <div class="text">venha<br>peça já o seu dogão!</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 6</div>
+            <img src="http://s2.glbimg.com/WKt8GjfqW_rR0EXcrYDsliJIycg=/e.glbimg.com/og/ed/f/original/2016/08/25/cerveja.jpg" style="width:100%">
+            <div class="text">peça sua cerveja gelada</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 6</div>
+            <img src="http://d26lpennugtm8s.cloudfront.net/stores/200/566/products/refrigerante-11-ef19851a8c6eae555515119358401017-640-0.jpg" style="width:50%">
+            <div class="text">Refrigerantes bem gelado!</div>
+        </div>          
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 6</div>
+            <img src="https://thumb-cdn.solutudo.com/prod/shp_products/sp760fw/5e08ac3f-ba0c-4a42-8394-002149153e69/66452f44-fa6b-49e8-bfcf-ea7ec7a69bd4.png" style="width:100%">
+            <div class="text">varias opções de lanches!</div>
+        </div>
+    </div>
+    <br>
+    <div style="text-align:center">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    </div>
+
+    <section id="boxes" class="last">
+        <div class="container">
+            <br><h1 id="about">sobre nós</h1>
+            <div class="box">
+                <i class="fa fa-cutlery fa-4x"></i>
+                <h3>Refeições Deliciosas</h3>
+                <p>venhas provas nossos Refeições</p>
+            </div>
+            <div class="box">
+                <i class="fa fa-glass fa-4x"></i>
+                <h3>Bebidas Geladas</h3>
+                <p>Bebidas bem geladas e um preço bem camarada.</p>
+            </div>
+            <div class="box">
+                <i class="fa fa-shopping-cart fa-4x"></i>
+                <h3>Faça sua encomenda</h3>
+                <p>faça seu pedido e logo estará pronto para servi-lo</p>
+            </div>     
+      </div>
+		</section>
+		   <!-- End container div -->
+		</div>
+    <footer>
+        <p>entre em contato</p>
+        <p><span class="highlight">Cachorrão</span> <span>Lanches</span>, Copyright &copy; 2019</p>
+    </footer>
+    <script>
+        /******SLIDESHOW***** */
+        let slideIndex = 0;
+        const showSlides = () => {
+            const slides = document.getElementsByClassName('mySlides');
+            const dots = document.getElementsByClassName('dot');
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = 'none';
+            }
+            slideIndex += 1;
+            if (slideIndex > slides.length) { slideIndex = 1; }
+
+            for (let i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(' active', '');
+            }
+            slides[slideIndex - 1].style.display = 'block';
+            dots[slideIndex - 1].className += ' active';
+            setTimeout(showSlides, 3000); // Change image every 3 seconds
+        };
+        showSlides()
+    </script>
+    <script src="../js/scripts.js"></script>
+</body>
+</html>

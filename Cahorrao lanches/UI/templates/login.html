@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <title>Cachorrão Lanche | Login</title>
+		<link rel="stylesheet" href="../css/main.css">
+		<link rel="stylesheet" href="../css/forms.css">
+		<link rel="stylesheet" href="../css/nav.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<div class="container">
+			<header> 
+				<div id="title">
+					<h1><a href="./index"><i class="fa fa-cutlery"></i><span class="highlight"> Cachorrão</span>-<span class="highlight">lanches!</span></a></h1>
+				</div>
+				<nav class="topNav">
+					<a href="index">Home</a>
+					<a href="index#about">Sobre</a>
+					<div class="dropdown">
+						<a class="dropbtn"><a href="menu">Menu <i class="fa fa-caret-down"></i></a></a>
+						<div class="dropdown-content">
+							<a href=".menu#Lanches">Lanches</a>
+							<a href="menu#Dogão">Dogão</a>
+							<a href="menu#bebidas">bebidas</a>
+							
+						</div>
+					</div>
+					<a href="#" class="current">Login</a>
+					<a href="signup">Cadastra-se</a>
+					<a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
+				</nav>
+			</header>
+			<h1 class="formTitle">Login</h1>
+			<h4>tem uma conta conosco?, <a href="./signup">Entre</a> para registrar.</h4>
+			<br>
+			<div id="loginForm">
+				<form>
+					<i class="fa fa-user fa-2x" aria-hidden="true"></i>
+					<div id="usernameErr"></div>
+					<label for="usernameEmail">Usuario/Email</label>
+					<input class="userForm" id="usernameEmail" name="usernameEmail" placeholder="Entre com seu nome e senha" required>
+					<div id="emailErr"></div>
+					<label for="senha">senha</label>
+					<input class="userForm" id="password" name="password" type="password" placeholder="Entre com sua senha" required>
+					<div id="passwordErr"></div>
+					<div><input type="checkbox" id="checkbox" onclick="togglePassword()">Mostrar senha</div>
+					<div id="password2Err"></div>
+					<button id="loginBtn" type="button">Entrar</button>
+					<a href="#" class="white">Esqueceu sua senha?</a>
+				</form>
+			</div>
+			<h4 class="last">Está com dificuldade de entrar? <a href="./contact">Entre em contato</a></h4>
+		</div>
+		<footer>
+			<p>Entre em contato </p>
+			<p><span class="highlight">Cachorrão</span>-<span class="highlight">Lanches!</span>, Copyright &copy; 2019</p>
+		</footer>
+        <script>
+            function togglePassword() {
+                const input = document.getElementById("password");
+                if (input.type === "password") {
+                    input.type = "text";
+                } else {
+                    input.type = "password";
+                }
+            }
+		</script>
+		<script src="../js/scripts.js"></script>
+		<script src="../app/js/login.js"></script>
+		<script src="../app/js/username.js"></script>
+	</body>
+</html>
